@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE ELEGANCE School & Computer College</title>
+<meta name="description" content="THE ELEGANCE School & Computer College — A Step of Successful Education.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2b67;--blue:#1266d4;--gold:#f5bd25;--light:#f5f8fc;--text:#17233c;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.topbar{background:var(--navy);color:#fff;font-size:13px;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 4px 20px #0b2b6718}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:13px}
+.logo{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:#fff;overflow:hidden}.logo img{width:100%;height:100%;object-fit:contain;display:block}
+.brand strong{display:block;color:var(--navy);font-size:19px;line-height:1.1}
+.brand span{font-size:11px;color:#667085;letter-spacing:.5px}
+nav{display:flex;gap:24px;align-items:center}
+nav a{font-size:14px;font-weight:700;color:#263653}
+nav a:hover{color:var(--blue)}
+.menu{display:none;background:none;border:0;font-size:28px;color:var(--navy)}
+.hero{background:linear-gradient(135deg,#edf5ff 0%,#fff 55%,#fff7dc 100%);padding:78px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px}
+.badge{display:inline-block;background:#fff1bd;color:#805b00;border-radius:30px;padding:8px 16px;font-weight:800;font-size:12px;margin-bottom:17px}
+h1{font-family:"Playfair Display",serif;color:var(--navy);font-size:clamp(40px,5vw,67px);line-height:1.06;margin-bottom:18px}
+.hero h1 span{color:var(--blue)}
+.hero p{font-size:17px;color:#53627a;max-width:650px}
+.buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:9px;font-weight:800;font-size:14px}
+.primary{background:var(--blue);color:#fff}
+.secondary{border:2px solid var(--navy);color:var(--navy);background:#fff}
+.hero-card{background:#fff;border-radius:24px;padding:32px;box-shadow:0 25px 70px #0b2b6720;border-top:6px solid var(--gold)}
+.hero-card h3{color:var(--navy);font-size:23px;margin-bottom:8px}
+.hero-card .date{font-size:34px;font-weight:800;color:var(--blue);margin:7px 0 14px}
+.hero-card p{font-size:14px}
+.stats{padding:25px 0;background:var(--navy);color:#fff}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+.stat strong{display:block;color:var(--gold);font-size:24px}.stat span{font-size:12px}
+section{padding:78px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 40px}
+.section-head h2{font-family:"Playfair Display",serif;font-size:39px;color:var(--navy);margin-bottom:8px}
+.section-head p{color:#667085}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card .buttons{margin-top:15px}
+.card{background:#fff;border:1px solid #e6ebf2;border-radius:18px;padding:27px;box-shadow:0 12px 35px #0b2b670b}.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.photo-card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #e6ebf2;box-shadow:0 12px 35px #0b2b670b}.photo-card img{width:100%;height:230px;object-fit:cover;display:block}.photo-card div{padding:15px}.photo-card h3{color:var(--navy);font-size:17px}.photo-card p{font-size:12px;color:#667085;margin-top:4px}
+.icon{width:50px;height:50px;border-radius:12px;background:#eaf2ff;display:grid;place-items:center;font-size:24px;margin-bottom:17px}
+.card h3{color:var(--navy);margin-bottom:7px}
+.card p{font-size:14px;color:#667085}
+.about{background:var(--light)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-box{background:var(--navy);color:#fff;border-radius:24px;padding:42px}
+.about-box h3{font-family:"Playfair Display",serif;font-size:34px;color:#fff}
+.about-box p{color:#dce7fb;margin-top:12px}
+.list{margin-top:20px;display:grid;gap:11px}
+.list div{background:#fff;border-radius:9px;padding:10px 13px;color:var(--navy);font-weight:700;font-size:13px}
+.contact{background:linear-gradient(135deg,#fff9e7,#eef6ff)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-card{background:#fff;border-radius:18px;padding:30px;border:1px solid #e6ebf2}
+.contact-item{display:flex;gap:13px;margin:18px 0}.contact-item b{display:block;color:var(--navy)}.contact-item span{font-size:14px;color:#667085}
+footer{background:#071e49;color:#cdd9ef;padding:28px 0;text-align:center;font-size:13px}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:57px;height:57px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:28px;box-shadow:0 8px 25px #0003;z-index:30}
+@media(max-width:800px){
+ nav{display:none}.menu{display:block}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding-top:55px}.stats-grid{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}.photo-grid{grid-template-columns:1fr 1fr}.brand strong{font-size:15px}
+}
+label{display:block;font-size:12px;font-weight:700;color:var(--navy);margin:8px 0 5px}input,select,textarea{width:100%;border:1px solid #d7deea;border-radius:8px;padding:11px 12px;font:inherit;font-size:13px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1266d415}form>.btn{margin-top:12px;border:0;cursor:pointer}</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>📍 Ferozewala, Gujjar Market, St. No. 15</span><span>📞 +92 310 422 4443</span></div></div>
+
+<header>
+<div class="container nav">
+<a class="brand" href="#home">
+  <div class="logo"><img src="official-logo.png" alt="THE ELEGANCE School & Computer College official logo"></div>
+  <div><strong>THE ELEGANCE</strong><span>School & Computer College</span></div>
+</a>
+<nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#programs">Programs</a><a href="#computer">Courses</a><a href="#admissions">Admissions</a><a href="#gallery">Gallery</a><a href="#notices">Notices</a><a href="#contact">Contact</a>
+</nav>
+<button class="menu" onclick="toggleMenu()">☰</button>
+</div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="badge">A STEP OF SUCCESSFUL EDUCATION</div>
+<h1>Learn Today.<br><span>Lead Tomorrow.</span></h1>
+<p>Welcome to THE ELEGANCE School & Computer College — a place where education, character and practical skills come together.</p>
+<div class="buttons"><a class="btn primary" href="#programs">Explore Programs</a><a class="btn secondary" href="#contact">Contact School</a></div>
+</div>
+<div class="hero-card">
+<h3>Admissions & Learning</h3>
+<div class="date">2026–27</div>
+<p>Quality education from Play Group to Matric, plus college-level programs and practical computer courses.</p>
+<div class="buttons"><a class="btn primary" href="https://wa.me/923104224443" target="_blank">💬 WhatsApp Us</a></div>
+</div>
+</div>
+</section>
+
+<div class="stats"><div class="container stats-grid">
+<div class="stat"><strong>PG–Matric</strong><span>School Education</span></div>
+<div class="stat"><strong>F.A</strong><span>College Program</span></div>
+<div class="stat"><strong>I.Com</strong><span>Commerce Program</span></div>
+<div class="stat"><strong>I.Cs</strong><span>Computer Science</span></div>
+</div></div>
+
+<section id="programs">
+<div class="container">
+<div class="section-head"><h2>Academic Programs</h2><p>Structured learning opportunities for students at different stages of their education.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🎒</div><h3>Play Group to Matric</h3><p>School education designed to build strong academic foundations and confidence.</p></div>
+<div class="card"><div class="icon">📚</div><h3>F.A</h3><p>College-level studies with a focus on academic development and future opportunities.</p></div>
+<div class="card"><div class="icon">💼</div><h3>I.Com</h3><p>Commerce education for students interested in business and accounting pathways.</p></div>
+<div class="card"><div class="icon">💻</div><h3>I.Cs</h3><p>Computer science studies for students developing a foundation in technology.</p></div>
+</div>
+</div>
+</section>
+
+<section id="computer" class="about">
+<div class="container">
+<div class="section-head"><h2>Computer Courses</h2><p>Practical skills that students can use for education, work and everyday digital tasks.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🖥️</div><h3>Foundation (Microsoft Office)</h3><p>Learn essential office productivity skills and everyday computer use.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Graphic's Designing</h3><p>Build creative digital design skills and learn the fundamentals of visual communication.</p></div>
+<div class="card"><div class="icon">⌨️</div><h3>Typing Course</h3><p>Improve keyboard skills, accuracy and typing confidence.</p></div>
+</div>
+</div>
+</section>
+
+
+
+<section id="admissions">
+<div class="container">
+<div class="section-head"><h2>Admission Form</h2><p>Fill in the basic details below. For final submission and admission confirmation, please contact the school.</p></div>
+<div class="contact-grid">
+<div class="contact-card">
+<form onsubmit="submitAdmission(event)">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+<div><label>Student Name *</label><input required name="student" placeholder="Student full name"></div>
+<div><label>Father / Guardian Name *</label><input required name="father" placeholder="Father or guardian name"></div>
+<div><label>Phone Number *</label><input required name="phone" type="tel" placeholder="+92 3XX XXXXXXX"></div>
+<div><label>Apply For Class *</label><select required name="class"><option value="">Select Class</option><option>Play Group</option><option>Nursery</option><option>Prep</option><option>1st</option><option>2nd</option><option>3rd</option><option>4th</option><option>5th</option><option>6th</option><option>7th</option><option>8th</option><option>9th</option><option>10th</option></select></div>
+<div><label>Program *</label><select required name="program"><option value="">Select Program</option><option>School Education</option><option>F.A</option><option>I.Com</option><option>I.Cs</option><option>Foundation (Microsoft Office)</option><option>Graphic's Designing</option><option>Typing Course</option></select></div>
+<div><label>Previous School</label><input name="previous" placeholder="Previous school (if any)"></div>
+</div>
+<label>Address *</label><textarea required name="address" rows="3" placeholder="Home address"></textarea>
+<label>Additional Message</label><textarea name="message" rows="3" placeholder="Any question or information"></textarea>
+<button class="btn primary" type="submit">Submit via WhatsApp</button>
+</form>
+</div>
+<div class="contact-card">
+<h3 style="color:var(--navy);margin-bottom:10px">Admission Help</h3>
+<p style="color:#667085;font-size:14px">After submitting the form, WhatsApp will open with the entered details so the school can respond directly.</p>
+<div class="list">
+<div>✓ Play Group to Matric</div><div>✓ F.A, I.Com, I.Cs</div><div>✓ Computer Courses</div><div>✓ Ferozewala, Gujjar Market, St. No. 15</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="about">
+<div class="container about-grid">
+<div>
+<div class="section-head" style="text-align:left;margin:0 0 20px"><h2>About THE ELEGANCE</h2><p>Our aim is to provide a supportive learning environment where students can grow academically and personally.</p></div>
+<p>We believe successful education combines knowledge, discipline, confidence, creativity and practical skills.</p>
+</div>
+<div class="about-box"><h3>Our Motto</h3><p>“A Step of Successful Education”</p><div class="list"><div>✓ Quality-focused learning</div><div>✓ Character & confidence building</div><div>✓ Practical computer education</div><div>✓ Supportive school environment</div></div></div>
+</div>
+</section>
+
+
+
+<section id="notices">
+<div class="container">
+<div class="section-head"><h2>School Notices</h2><p>Important announcements and upcoming school activities.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">📅</div><h3>2nd Term Exam</h3><p><strong>Starting from 5th October 2026</strong></p><p>Please prepare students for the examination according to the school schedule.</p></div>
+<div class="card"><div class="icon">🏆</div><h3>School Activities</h3><p>Sports, competitions and educational activities will be announced here.</p></div>
+<div class="card"><div class="icon">📢</div><h3>Latest Updates</h3><p>Parents can contact the school for the latest notices, timings and announcements.</p></div>
+</div>
+</div>
+</section>
+
+
+
+
+<section id="gallery" class="about">
+<div class="container">
+<div class="section-head"><h2>School Gallery</h2><p>Real school-student moments and activities from THE ELEGANCE.</p></div>
+<div class="photo-grid">
+<div class="photo-card"><img src="assets/student-study.jpg" alt="THE ELEGANCE student studying"><div><h3>Learning Time</h3><p>Focused learning and classroom practice.</p></div></div>
+<div class="photo-card"><img src="assets/student-uniform.jpg" alt="THE ELEGANCE student in school uniform"><div><h3>Our Students</h3><p>Students proudly wearing the school uniform.</p></div></div>
+<div class="photo-card"><img src="assets/students-art.jpg" alt="THE ELEGANCE students during an art activity"><div><h3>Creative Activities</h3><p>Students exploring art and creativity.</p></div></div>
+<div class="photo-card"><img src="assets/students-hand-art.jpg" alt="THE ELEGANCE students showing artwork"><div><h3>Little Artists</h3><p>Young learners sharing their creative work.</p></div></div>
+<div class="photo-card"><img src="assets/students-play.jpg" alt="THE ELEGANCE students playing together"><div><h3>Play & Learn</h3><p>Learning through enjoyable group activities.</p></div></div>
+<div class="photo-card"><img src="assets/students-activity.jpg" alt="THE ELEGANCE students in an activity"><div><h3>Activity Day</h3><p>Active participation and happy learning moments.</p></div></div>
+<div class="photo-card"><img src="assets/students-creative.jpg" alt="THE ELEGANCE students creating artwork"><div><h3>Creativity</h3><p>Hands-on classroom creativity.</p></div></div>
+<div class="photo-card"><img src="assets/students-learning.jpg" alt="THE ELEGANCE students learning together"><div><h3>Team Learning</h3><p>Students learning and working together.</p></div></div>
+</div>
+</div>
+</section>
+
+
+<section id="results">
+<div class="container">
+<div class="section-head"><h2>Results & Progress</h2><p>Celebrating learning progress and encouraging students to keep improving.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">📊</div><h3>Academic Results</h3><p>Term and annual results can be shared here when published by the school.</p></div>
+<div class="card"><div class="icon">🌟</div><h3>Student Achievement</h3><p>Outstanding academic and co-curricular achievements can be highlighted here.</p></div>
+<div class="card"><div class="icon">📈</div><h3>Continuous Progress</h3><p>Regular assessments help students and parents understand learning progress.</p></div>
+</div>
+</div>
+</section>
+
+<section id="teachers" class="about">
+<div class="container">
+<div class="section-head"><h2>Our Teachers</h2><p>Dedicated educators helping students learn, grow and build confidence.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">👩‍🏫</div><h3>Qualified Teachers</h3><p>Teachers focused on clear concepts, regular practice and student progress.</p></div>
+<div class="card"><div class="icon">🎓</div><h3>Student Guidance</h3><p>Supportive guidance to help students develop academic and practical skills.</p></div>
+<div class="card"><div class="icon">⭐</div><h3>Character Building</h3><p>We encourage discipline, confidence, responsibility and positive learning habits.</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+<div class="section-head"><h2>Contact Us</h2><p>For admissions, courses and school information, contact us directly.</p></div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="contact-item"><div>📍</div><div><b>Address</b><span>Ferozewala, Gujjar Market, St. No. 15</span></div></div>
+<div class="contact-item"><div>📞</div><div><b>Phone</b><span>+92 310 422 4443</span></div></div>
+<div class="contact-item"><div>💬</div><div><b>WhatsApp</b><span>Chat with the school directly</span></div></div>
+</div>
+<div class="contact-card">
+<h3 style="color:var(--navy);margin-bottom:10px">Send an Inquiry</h3>
+<p style="color:#667085;font-size:14px">For the first version, use the WhatsApp button for direct communication. A full online inquiry form can be added next.</p>
+<div class="buttons"><a class="btn primary" href="https://wa.me/923104224443?text=Assalam-o-Alaikum%2C%20I%20want%20information%20about%20THE%20ELEGANCE%20School." target="_blank">Open WhatsApp</a></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 THE ELEGANCE School & Computer College · A Step of Successful Education</footer>
+<a class="whatsapp" href="https://wa.me/923104224443" target="_blank" aria-label="WhatsApp">◉</a>
+
+<script>
+function toggleMenu(){
+ const nav=document.querySelector('nav');
+ nav.style.display=nav.style.display==='flex'?'none':'flex';
+ nav.style.position='absolute';nav.style.right='4%';nav.style.top='82px';nav.style.background='#fff';
+ nav.style.padding='18px';nav.style.flexDirection='column';nav.style.boxShadow='0 12px 30px #0002';
+}
+</script>
+
+<script>
+function submitAdmission(e){
+ e.preventDefault();
+ const f=e.target;
+ const get=n=>encodeURIComponent(f.elements[n].value.trim());
+ const msg="Assalam-o-Alaikum, I want to apply for admission at THE ELEGANCE School & Computer College.%0A%0AStudent Name: "+get("student")+"%0AFather/Guardian: "+get("father")+"%0APhone: "+get("phone")+"%0AClass: "+get("class")+"%0AProgram: "+get("program")+"%0APrevious School: "+get("previous")+"%0AAddress: "+get("address")+"%0AMessage: "+get("message");
+ window.open("https://wa.me/923104224443?text="+msg,"_blank");
+}
+</script>
+</body>
+</html>
